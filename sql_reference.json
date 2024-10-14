@@ -1,0 +1,8 @@
+{
+  "database": {
+    "add Fluor": "INSERT INTO elements(atomic_number,symbol,name) VALUES(9,'F','Fluorine');",
+    "add Neon": "INSERT INTO elements(atomic_number,symbol,name) VALUES(10,'Ne','Neon');",
+    "remove trailing zeroes 1": "ALTER TABLE PROPERTIES ALTER COLUMN atomic_mass TYPE VARCHAR(9);",
+    "remove trailing zeroes 2": "UPDATE properties SET atomic_mass=CAST(atomic_mass AS FLOAT);"
+  }
+}
